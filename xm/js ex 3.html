@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <script>
+            function validate()
+        {
+            if(document.frm1.cname.value.length<1)
+            {
+                alert("Customer name cannot be blank");
+            }
+            if(isNaN(document.frm1.pon.value))
+            {
+                alert("should be numeric");
+            }
+            if((!document.frm1.dm[0].checked)&&(!document.frm1.dm[1].checked))
+            {
+                alert("Please select one");
+            }
+            if(document.frm1.pay.selectedIndex==0)
+            {
+                alert("Select p method");
+
+            }
+            if(!document.frm1.agree.checked)
+            {
+                alert("agree ornot?");
+
+            }
+
+
+        }
+        </script>
+    </head>
+    <body>
+        <h1>colombo accessories</h1>
+        <table>
+            <form name ="frm1" method="POST" onSubmit="validate();">
+                <tr>
+                    <td>Costomer Name</td>
+                    <td><input type="text" name="cname"></td>
+                </tr>
+                <tr>
+                    <td>PON</td>
+                    <td><input type="text" name="pon"></td>
+                </tr>
+                <tr>
+                    <td>Delivery method</td>
+                    <td><input type="radio" name="dm" value="Ordinary Post">ordinary post
+                        <input type="radio" name="dm" value="Speed Post">speed post
+                    </td>
+                </tr>
+                <tr>
+                    <td>P method</td>
+                    <td>
+                        <select name="pay">
+                            <option>Enter Payment method</option>
+                            <option>Cash </option>
+                            <option>Cheque</option>
+                        </select>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agree to terms?</td>
+                    <td><input type="checkbox" name="agree"> </td>
+                </tr>
+                <tr>
+                    <td><input type="Submit" value="Validate"></td>
+                    <td></td>
+                </tr>
+                
+            </form>
+        </table>
+    </body>
+</html>

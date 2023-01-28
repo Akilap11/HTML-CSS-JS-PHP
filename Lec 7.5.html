@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+function message(){
+window.alert("good afternoon");
+document.bgColor='red';
+document.fgColor='green';
+}
+function enlarge(){
+document.getElementById('image1').width=800;
+document.getElementById('image1').height=700;
+document.getElementById('image1').border=3;
+}
+function reSize(){
+document.getElementById('image1').width=600;
+document.getElementById('image1').height=500;
+document.getElementById('image1').border=0;
+}
+function changeText(){
+document.getElementById('link1').innerHTML='Microsoft';
+}
+function changeLink(){
+document.getElementById('link1').href='http://www.facebook.com';
+}
+
+</script>
+</head>
+<body>
+<h1 onMouseOver='message();'>Sri Lanka</h1>
+<img src='sad.jfif' id='image1' width=600 height=500 onMouseOver='enlarge();' onMouseOut='reSize()'/>
+<h2><a id='link1' href="http://www.google.com" onMouseOver='changeText();' onClick='changeLink();'>for more images,visit Google</a></h2>
+</body>
+<html>

@@ -1,0 +1,12 @@
+h1{
+float:right;
+background-color:#AABB00;
+}
+p{
+background-color:#AA6600;
+color:#AA0044;
+font-family:"Arial";
+font-size:15px;
+font-weight:Bold;
+font-style:italic;  /*only this comment works*/
+}
